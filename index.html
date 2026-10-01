@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Website</title>
+    <style>
+        /* Modern Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        a {
+            text-transform: none;
+            color: #0969da;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #24292f;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: #57606a;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            color: #24292f;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #24292f 0%, #1f2428 100%);
+            color: #ffffff;
+            padding: 8rem 2rem 5rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2da44e;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .btn:hover {
+            background-color: #2c974b;
+            text-decoration: none;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #d0d7de;
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #24292f;
+            color: #8b949e;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-container { flex-direction: column; gap: 1rem; }
+            nav ul li { margin: 0 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">MyBrand</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero">
+        <h1>Welcome to My GitHub Site</h1>
+        <p>This is a lightweight, responsive HTML template served directly out of a GitHub repository using Pages.</p>
+        <a href="#features" class="btn">Get Started</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About This Project</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>GitHub Pages allows you to turn repositories into live websites instantly. This template combines both structural HTML elements and clean CSS styles into a single file, keeping deployment straightforward and exceptionally efficient.</p>
+        </div>
+    </section>
+
+    <!-- Features Section Grid -->
+    <section id="features" class="section" style="background-color: #f6f8fa;">
+        <h2 class="section-title">Key Offerings</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>⚡ Fast Deployment</h3>
+                <p>Push code straight to your GitHub repository and view your live modifications globally within minutes.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Mobile Friendly</h3>
+                <p>Designed with media queries built directly into the CSS template to automatically snap onto phone screens seamlessly.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Secure &amp; Free</h3>
+                <p>Hosted reliably on GitHub infrastructure featuring automated SSL certification natively configured out of the box.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div style="max-width: 500px; margin: 0 auto;">
+            <p style="text-align: center; margin-bottom: 1.5rem;">Have questions? Feel free to reach out via email or open an issue directly in the repository wrapper!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyBrand. Hosted with ❤️ on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
